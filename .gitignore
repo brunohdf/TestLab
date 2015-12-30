@@ -38,6 +38,10 @@ build/
 ## Calabash
 *.jks
 *.apk
-screenshot*
+screenshot*.png
 .calabash_settings
-reports.html
+reports*.html
+.irb-history
+reports/*
+test_servers/*
+.DS_Store
