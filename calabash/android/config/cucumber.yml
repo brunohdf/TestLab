@@ -1,0 +1,6 @@
+#config/cucumber.yml
+##YAML Templaet
+---
+html_report: --format progress --format html --out=features_report.html
+android: RESET_BETWEEN_SCENARIOS=1 PLATFORM=android -r features/support -r features/android -r features/setp_definitions --exclude features/ios
+#ios: PLATFORM=ios -r features/ios -r features/step_definitions --tags '@custom_tag'
