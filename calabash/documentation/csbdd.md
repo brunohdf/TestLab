@@ -30,7 +30,7 @@ O cs-bdd possuiu nove gerados, para criar templates de Features, Step definition
 
 Todos os comandos de generate devem ser executados no diretório raiz do projeto.
 
-### Feature
+#### Feature
 
 	cs-bdd generate feature <nome_da_feature>
 
@@ -48,7 +48,7 @@ O generate feature por default já cria os arquivos de step definitions e screen
     <img src="../images/csbdd_create_feature.png"/>
 </div>
 
-### Setps
+#### Setps
 
 	cs-bdd generate step StepName
 
@@ -60,5 +60,21 @@ iOS:
 
 	cs-bdd generate iScreen <nome_step_ios>
 	
+## Android
 
-	
+Para executar o teste é preciso definir o profile, através do parâmetro "-p".
+
+	calabash-android run <apk> -p android
+
+## iOS
+
+Antes de executar o projeto de iOS é preciso configurar o arquivo build_app.yml para definir o xcworkspace, o targert do Calabash e onde será gerado o App.
+
+O build_app.yml encontra-se em config/scripts/ios/build_app.yml .
+
+	dev:
+  		xcworkspace: "<diretorio_do_xcworkspace>"
+		scheme: <nome_target>
+		configuration: Debug
+		export_path: "<diretorio_do_executável>"
+
