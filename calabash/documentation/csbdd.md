@@ -86,4 +86,4 @@ O primeiro parâmetro é referente ao ambiente que você criou e o segundo é pa
 
 E por fim, para executar o teste execute o comando abaixo:
 
-APP_BUNDLE_PATH=<diretior_do_executavel> DEVICE_TARGET=<uuid_do_aparelho> cucumber -p ios
+	APP_BUNDLE_PATH=<diretior_do_executavel> DEVICE_TARGET=<uuid_do_aparelho> cucumber -p ios
