@@ -78,3 +78,12 @@ O build_app.yml encontra-se em config/scripts/ios/build_app.yml .
 		configuration: Debug
 		export_path: "<diretorio_do_executável>"
 
+Depois de configurado o build_app.yml, execute o comando:
+
+	ruby config/scripts/ios/build_app.rb dev simulator
+
+O primeiro parâmetro é referente ao ambiente que você criou e o segundo é para criar um build para o simulador (simulator) ou para o aparelho (device).
+
+E por fim, para executar o teste execute o comando abaixo:
+
+APP_BUNDLE_PATH=<diretior_do_executavel> DEVICE_TARGET=<uuid_do_aparelho> cucumber -p ios
