@@ -1,6 +1,6 @@
 dev:
   xcworkspace: "/Users/felipets/Documents/Swat/TestLab/Projects/iOS/TestLab.xcworkspace"
-  scheme: TestLab-cal
+  scheme: Testlab-cal
   configuration: Debug
   export_path: "releases/dev"
 
