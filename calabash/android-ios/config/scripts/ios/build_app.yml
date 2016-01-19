@@ -1,8 +1,8 @@
 dev:
-  xcworkspace: "Path_to_the_xcworkspace_folder"
-  scheme: TargetName
+  xcworkspace: "/Users/felipets/Documents/Swat/TestLab/Projects/iOS/TestLab.xcworkspace"
+  scheme: TestLab-cal
   configuration: Debug
-  export_path: "Path_to_export_app_folder"
+  export_path: "releases/dev"
 
 jenkins:
   xcworkspace: <%= ENV['WORKSPACE']%>/Project.xcworkspace
