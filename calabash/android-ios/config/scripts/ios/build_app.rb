@@ -52,10 +52,17 @@ end
 
 puts 'Building project'
 
+list_devices = `xcrun simctl list`
+list_iphones = /== Devices ==(.+)-- tvOS/m.match(list_devices)[0]
+last_iphone6 = list_iphones.scan(/iPhone 6 \((.+)\) /).last[0]
+puts last_iphone6
+
 system <<eos
   xcodebuild -workspace "#{config['xcworkspace']}" \
   -scheme "#{config['scheme']}" -sdk "#{sdk}" \
-  -configuration "#{config['configuration']}" clean build \
+  -configuration "#{config['configuration']}" \
+  -destination "platform=iOS Simulator,id=#{last_iphone6},OS=9.2"
+  clean build \
   CONFIGURATION_BUILD_DIR="#{export_path}"
 eos
 
