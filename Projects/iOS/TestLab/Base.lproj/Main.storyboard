@@ -54,6 +54,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" label="home_screen"/>
                         <constraints>
                             <constraint firstItem="KOF-cX-F1y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1Db-Iq-h9A"/>
                             <constraint firstItem="soi-nN-byI" firstAttribute="centerX" secondItem="KOF-cX-F1y" secondAttribute="centerX" id="aZB-hn-1ru"/>
@@ -97,6 +98,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" label="detail_screen"/>
                         <constraints>
                             <constraint firstItem="ZOX-Ya-Vqo" firstAttribute="centerX" secondItem="89y-FO-B56" secondAttribute="centerX" id="C1h-mE-i5g"/>
                             <constraint firstItem="ZOX-Ya-Vqo" firstAttribute="top" secondItem="bVU-v9-Q6S" secondAttribute="bottom" constant="100" id="xPn-OP-5FT"/>
