@@ -7,16 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0124FA2E1C4E6B3600CC836C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64BFF1C4D636E00C878CE /* ViewController.m */; };
-		0124FA2F1C4E6B3600CC836C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64BFC1C4D636E00C878CE /* AppDelegate.m */; };
-		0124FA301C4E6B3600CC836C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64BF91C4D636E00C878CE /* main.m */; };
-		0124FA311C4E6B3600CC836C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64C101C4D63F400C878CE /* DetailViewController.m */; };
-		0124FA341C4E6B3600CC836C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AB64C061C4D636E00C878CE /* LaunchScreen.storyboard */; };
-		0124FA351C4E6B3600CC836C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB64C041C4D636E00C878CE /* Assets.xcassets */; };
-		0124FA361C4E6B3600CC836C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AB64C011C4D636E00C878CE /* Main.storyboard */; };
-		0124FA3D1C4E6C0200CC836C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0124FA3C1C4E6C0200CC836C /* CFNetwork.framework */; };
-		0124FA3F1C4E6C0D00CC836C /* calabash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0124FA3E1C4E6C0D00CC836C /* calabash.framework */; };
-		0124FA411C4E706700CC836C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0124FA401C4E706700CC836C /* UIKit.framework */; };
 		2AB64BFA1C4D636E00C878CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64BF91C4D636E00C878CE /* main.m */; };
 		2AB64BFD1C4D636E00C878CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64BFC1C4D636E00C878CE /* AppDelegate.m */; };
 		2AB64C001C4D636E00C878CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64BFF1C4D636E00C878CE /* ViewController.m */; };
@@ -27,11 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0124FA3A1C4E6B3600CC836C /* Testlab-cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Testlab-cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0124FA3B1C4E6B3600CC836C /* Testlab copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Testlab copy-Info.plist"; path = "/Users/felipets/Documents/Swat/TestLab/Projects/iOS/Testlab copy-Info.plist"; sourceTree = "<absolute>"; };
-		0124FA3C1C4E6C0200CC836C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		0124FA3E1C4E6C0D00CC836C /* calabash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = calabash.framework; sourceTree = "<group>"; };
-		0124FA401C4E706700CC836C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2AB64BF51C4D636E00C878CE /* Testlab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Testlab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB64BF91C4D636E00C878CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2AB64BFB1C4D636E00C878CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -47,16 +32,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0124FA321C4E6B3600CC836C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0124FA411C4E706700CC836C /* UIKit.framework in Frameworks */,
-				0124FA3F1C4E6C0D00CC836C /* calabash.framework in Frameworks */,
-				0124FA3D1C4E6C0200CC836C /* CFNetwork.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2AB64BF21C4D636E00C878CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,12 +45,8 @@
 		2AB64BEC1C4D636E00C878CE = {
 			isa = PBXGroup;
 			children = (
-				0124FA401C4E706700CC836C /* UIKit.framework */,
-				0124FA3E1C4E6C0D00CC836C /* calabash.framework */,
-				0124FA3C1C4E6C0200CC836C /* CFNetwork.framework */,
 				2AB64BF71C4D636E00C878CE /* Testlab */,
 				2AB64BF61C4D636E00C878CE /* Products */,
-				0124FA3B1C4E6B3600CC836C /* Testlab copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				2AB64BF51C4D636E00C878CE /* Testlab.app */,
-				0124FA3A1C4E6B3600CC836C /* Testlab-cal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,23 +87,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0124FA2C1C4E6B3600CC836C /* Testlab-cal */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0124FA371C4E6B3600CC836C /* Build configuration list for PBXNativeTarget "Testlab-cal" */;
-			buildPhases = (
-				0124FA2D1C4E6B3600CC836C /* Sources */,
-				0124FA321C4E6B3600CC836C /* Frameworks */,
-				0124FA331C4E6B3600CC836C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Testlab-cal";
-			productName = Testlab;
-			productReference = 0124FA3A1C4E6B3600CC836C /* Testlab-cal.app */;
-			productType = "com.apple.product-type.application";
-		};
 		2AB64BF41C4D636E00C878CE /* Testlab */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2AB64C0C1C4D636E00C878CE /* Build configuration list for PBXNativeTarget "Testlab" */;
@@ -165,7 +118,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2AB64BF01C4D636E00C878CE /* Build configuration list for PBXProject "TestLab" */;
+			buildConfigurationList = 2AB64BF01C4D636E00C878CE /* Build configuration list for PBXProject "Testlab" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -179,22 +132,11 @@
 			projectRoot = "";
 			targets = (
 				2AB64BF41C4D636E00C878CE /* Testlab */,
-				0124FA2C1C4E6B3600CC836C /* Testlab-cal */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0124FA331C4E6B3600CC836C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0124FA341C4E6B3600CC836C /* LaunchScreen.storyboard in Resources */,
-				0124FA351C4E6B3600CC836C /* Assets.xcassets in Resources */,
-				0124FA361C4E6B3600CC836C /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2AB64BF31C4D636E00C878CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,17 +150,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0124FA2D1C4E6B3600CC836C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0124FA2E1C4E6B3600CC836C /* ViewController.m in Sources */,
-				0124FA2F1C4E6B3600CC836C /* AppDelegate.m in Sources */,
-				0124FA301C4E6B3600CC836C /* main.m in Sources */,
-				0124FA311C4E6B3600CC836C /* DetailViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2AB64BF11C4D636E00C878CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,53 +183,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0124FA381C4E6B3600CC836C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				INFOPLIST_FILE = "Testlab copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-force_load",
-					"\"$(SRCROOT)/calabash.framework/calabash\"",
-					"-lstdc++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = ciandt.com.Testlab;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
-			};
-			name = Debug;
-		};
-		0124FA391C4E6B3600CC836C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				INFOPLIST_FILE = "Testlab copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-force_load",
-					"\"$(SRCROOT)/calabash.framework/calabash\"",
-					"-lstdc++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = ciandt.com.Testlab;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
-			};
-			name = Release;
-		};
 		2AB64C0A1C4D636E00C878CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -406,16 +290,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0124FA371C4E6B3600CC836C /* Build configuration list for PBXNativeTarget "Testlab-cal" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0124FA381C4E6B3600CC836C /* Debug */,
-				0124FA391C4E6B3600CC836C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2AB64BF01C4D636E00C878CE /* Build configuration list for PBXProject "TestLab" */ = {
+		2AB64BF01C4D636E00C878CE /* Build configuration list for PBXProject "Testlab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2AB64C0A1C4D636E00C878CE /* Debug */,
@@ -431,7 +306,6 @@
 				2AB64C0E1C4D636E00C878CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
