@@ -18,11 +18,11 @@ class NameScreen < AndroidScreenBase
 
   def contains_name?
     begin
-      wait_for(timeout: 5) { element_exists "* {text CONTAINS 'Felipe'}" }
+      wait_for(timeout: 10) { element_exists "* {text CONTAINS 'Felipe'}" }
     rescue
       false
     end
     return true
   end
-  
+
 end
