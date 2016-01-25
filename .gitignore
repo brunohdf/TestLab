@@ -45,3 +45,5 @@ reports*.html
 reports/*
 test_servers/*
 .DS_Store
+
+calabash/android-ios/report.html

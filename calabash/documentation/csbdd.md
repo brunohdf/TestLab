@@ -1,7 +1,16 @@
 CS:BDD
 ======
 
-É uma gem para criar a estrutura de um projeto calabash com suporte a Android e iOS.
+É uma gem para criar a estrutura de um projeto calabash com suporte a Android e iOS. Antes de começar a usar o CS:BDD recomendo que você leia os tutorias específico por plataforma, nós links abaixo:
+
+1.	[iOS](ios.md)
+2.	[Android](android.md)
+
+Antes de começar é importante você verificar se a versão do seu ruby é igual ou superior a 2.0 com o seguinte comando:
+
+	$ ruby -v
+
+Caso ainda não tenha instalado o calabash siga o nosso tutorial de instalação, clicando [aqui](install.md).
 
 Instalação
 ----------
