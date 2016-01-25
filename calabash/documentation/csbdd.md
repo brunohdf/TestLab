@@ -39,15 +39,26 @@ Depois do projeto criado, ele terá a seguinte estrutura:
 </div>
 
 Como funciona
-----------
+---------------
 
 <div style="text-align:center" markdown="1">
     <img src="../images/csbdd_folders.png"/>
 </div>
 
-Os diretórios Features e Stpes que estão na cor amarelo são comuns entre as plataformas, e conforme o diagrama você pode perceber que os steps referência os diretórios de Screens de cada plataforma.
+Os diretórios features e steps que estão na cor amarela são comuns entre as plataformas, e conforme o diagrama você pode perceber que os steps fazem referência ao diretório de screen de cada plataforma.
 
-Os aquivos que estão na pasta de Screen são definidos como Page Object Layer, onde você irá mapear os objetos de cada tela conforme a plataforma. Veja um exemplo [aqui](https://github.com/CIT-SWAT/TestLab/blob/master/calabash/android-ios/features/android/screens/name_screen.rb).
+Os aquivos que estão na pasta de screen são definidos como Page Object Layer, onde você irá mapear os objetos e ações de cada tela conforme a plataforma. Veja um exemplo [aqui](https://github.com/CIT-SWAT/TestLab/blob/master/calabash/android-ios/features/android/screens/name_screen.rb).
+
+Toda screen tem um identificador que é conhecido como **trait**, ele serve para identificar em qual tela está ocorrendo o teste.
+
+Trait Android:
+
+	trait(:trait)                 { "* id:'#{layout_name}'" }
+
+Trait iOS
+
+	trait(:trait)                 { "* marked:'#{layout_name}'" }
+
 
 Mas caso alguma plataforma tenha uma feature diferente, é possível escrever um teste separado na pasta feature de cada plataforma.
 
@@ -82,7 +93,7 @@ O generate feature por default já cria os arquivos de step definitions e screen
     <img src="../images/csbdd_create_feature.png"/>
 </div>
 
-#### Setps
+#### Steps
 
 ```
 cs-bdd generate step StepName
@@ -137,3 +148,12 @@ E por fim, para executar o teste execute o comando abaixo:
 ```
 APP_BUNDLE_PATH=<diretior_do_executavel> DEVICE_TARGET=<uuid_do_aparelho> cucumber -p ios
 ```
+
+Caso você tem problemas de timeout para iniciar o simulador do iOS, basta adicionar o paramentro abaixo no inicio do comando, o valor é em segundos:
+
+	WAIT_TIMEOUT=60
+
+Exemplo
+----------
+
+Veja nosso exemplo [aqui](../documentation/csbdd.md)
