@@ -38,6 +38,19 @@ Depois do projeto criado, ele terá a seguinte estrutura:
     <img src="../images/csbdd.png"/>
 </div>
 
+Como funciona
+----------
+
+<div style="text-align:center" markdown="1">
+    <img src="../images/csbdd_folders.png"/>
+</div>
+
+Os diretórios Features e Stpes que estão na cor amarelo são comuns entre as plataformas, e conforme o diagrama você pode perceber que os steps referência os diretórios de Screens de cada plataforma.
+
+Os aquivos que estão na pasta de Screen são definidos como Page Object Layer, onde você irá mapear os objetos de cada tela conforme a plataforma. Veja um exemplo [aqui](https://github.com/CIT-SWAT/TestLab/blob/master/calabash/android-ios/features/android/screens/name_screen.rb).
+
+Mas caso alguma plataforma tenha uma feature diferente, é possível escrever um teste separado na pasta feature de cada plataforma.
+
 Generators
 ----------
 
