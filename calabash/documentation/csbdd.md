@@ -149,7 +149,7 @@ E por fim, para executar o teste execute o comando abaixo:
 APP_BUNDLE_PATH=<diretior_do_executavel> DEVICE_TARGET=<uuid_do_aparelho> cucumber -p ios
 ```
 
-Caso você tem problemas de timeout para iniciar o simulador do iOS, basta adicionar o paramentro abaixo no inicio do comando, o valor é em segundos:
+Caso você tenha problemas de timeout para iniciar o simulador do iOS, basta adicionar o paramentro abaixo no início do comando, o valor é em segundos:
 
 	WAIT_TIMEOUT=60
 

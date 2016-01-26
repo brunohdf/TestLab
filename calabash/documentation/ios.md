@@ -43,7 +43,7 @@ E por fim precisamo fazer um link para o framework do calabash na aba Build Sett
     <img src="../images/link_calabash.png"/>
 </div>
 
-#Calabash Server 
+##Calabash Server 
 
 E por fim, vamos testar se está tudo funcionando, execute a aplicação no Xcode verifique se o target Testlab-cal está selecionado.
 
@@ -87,4 +87,24 @@ Se o servidor Calabash está sendo executado, ele retornará informações sobre
   "app_base_sdk": "iphonesimulator9.2"
 }
 ````
+
+##Executando
+
+O calabash-ios não possui a funcionalidade de instalar o app no simulador, então antes de executar o teste é preciso executar o app pelo XCode, não esqueça de usar o target criado no passo anterior.
+
+Depois de instalado o app, você precisa do UUID do simulador para configurar a variável de ambiente DEVICE_TARGET. E para recupera a lista de UUID's dos simuladores use o seguinte comando:
+
+	xcrun simctl list
+
+Exemplo de UUID:
+
+	iPhone 6 (4FC36C3E-A9F5-4D16-B3B2-977CD54B9B82)
+
+E por fim vamos executar o teste com o comando abaixo:
+
+	DEVICE_TARGET=uuid_do_simulador cucumber
+	
+Caso você tenha problemas de timeout para iniciar o simulador do iOS, basta adicionar o paramentro abaixo no início do comando, o valor é em segundos:
+
+	WAIT_TIMEOUT=60
 
